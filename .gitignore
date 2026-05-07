@@ -1,0 +1,38 @@
+# Environment & secrets
+.env
+.secrets/
+*.key
+*.pem
+
+# User data
+data/
+semantic-memory/data/
+snapshots/
+logs/
+*.db
+*.lance
+
+# Ledgers
+*-LEDGER.md
+CHANGELOG.live.md
+
+# Backups
+*.bak*
+backup-*/
+
+# User config (use submarine.config.example.json as template)
+submarine.config.json
+
+# AI history
+.aider.*
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

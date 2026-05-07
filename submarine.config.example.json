@@ -1,0 +1,97 @@
+{
+  "version": "1.0.5",
+  "layers": {
+    "soul": {
+      "weight": 3,
+      "category": "identity",
+      "importance": 10,
+      "decay": false,
+      "journal": "SOUL-JOURNAL.md"
+    },
+    "core": {
+      "weight": 2,
+      "categories": [
+        "fact",
+        "decision",
+        "lesson",
+        "technical",
+        "finance",
+        "infrastructure"
+      ],
+      "decay": "standard",
+      "journal": "CORE-JOURNAL.md"
+    },
+    "cortex": {
+      "weight": 1,
+      "categories": [
+        "episode",
+        "resilient_episode"
+      ],
+      "importance": 3,
+      "journal": "CORTEX-JOURNAL.md"
+    }
+  },
+  "server": {
+    "defaultPort": 3100
+  },
+  "search": {
+    "minScore": 0.3,
+    "maxDistance": 800
+  },
+  "writeLock": {
+    "timeoutMs": 5000
+  },
+  "ollama": {
+    "url": "http://localhost:11434",
+    "model": "bge-m3",
+    "dimensions": 1024
+  },
+  "embedding": {
+    "model": "bge-m3",
+    "dim": 1024
+  },
+  "crystal": {
+    "mode": "block1",
+    "soulResonanceThreshold": 0.45,
+    "maxEnrichmentsPerSection": 3
+  },
+  "rings": {
+    "soul": {
+      "enabled": true,
+      "threshold": 0.45
+    },
+    "knowledge": {
+      "enabled": true,
+      "minScore": 0.4,
+      "maxResults": 3
+    },
+    "causality": {
+      "enabled": true,
+      "maxDepth": 3
+    }
+  },
+  "update": {
+    "mode": "event-driven",
+    "debounceMinutes": 5,
+    "checkIntervalSeconds": 60,
+    "safetyCronHours": 6
+  },
+  "manifest": {
+    "updateChannel": null
+  },
+  "adapter": "none",
+  "adapterConfig": {
+    "claudeMdPath": "CLAUDE.md",
+    "claudeMdSection": "## Context Crystal",
+    "soulPath": "SOUL.md",
+    "crystalOutputPath": "CONTEXT-CRYSTAL.md"
+  },
+  "paths": {
+    "data": "data",
+    "causalGraph": "data/causal-graph.json",
+    "immuneStats": "data/immune-stats.json",
+    "journal": "data/journal.log",
+    "extensions": "extensions",
+    "rings": "rings"
+  }
+}

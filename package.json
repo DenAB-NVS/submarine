@@ -1,0 +1,36 @@
+{
+  "name": "submarine",
+  "version": "1.0.5",
+  "description": "Sovereign depth-adaptive memory for AI. Model-agnostic. Local-first.",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs",
+    "test": "node test/smoke.mjs",
+    "dev": "node --watch index.mjs"
+  },
+  "keywords": [
+    "memory",
+    "semantic",
+    "ai",
+    "vector",
+    "lancedb",
+    "ollama",
+    "depth-adaptive",
+    "local-first",
+    "model-agnostic"
+  ],
+  "author": "D. Ashford",
+  "license": "AGPL-3.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@lancedb/lancedb": "^0.11.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DenAB-NVS/submarine"
+  }
+}
